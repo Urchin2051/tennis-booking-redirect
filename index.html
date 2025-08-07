@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to Tennis Booking...</title>
+  <script>
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const dd = String(today.getDate()).padStart(2, '0');
+    const formattedDate = `${yyyy}-${mm}-${dd}`;
+    const url = `https://play.tennis.com.au/BulliTennisCentre/Booking/BookByDate#?date=${formattedDate}&role=guest`;
+    window.location.href = url;
+  </script>
+</head>
+<body>
+  <p>Redirecting to today's Bulli Tennis booking page...</p>
+</body>
+</html>
